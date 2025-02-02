@@ -20,10 +20,10 @@ builder.Services.AddCors(options =>
 ////.LogTo(Console.WriteLine) // console respective sql commands in the o / p window
 //);
 builder.Configuration.AddUserSecrets<Program>();
-string connectionString = builder.Configuration["AWSPostgreSQLEmployeeDBConnection"];
+//string connectionString = builder.Configuration["AWSPostgreSQLEmployeeDBConnection"];
 builder.Services.AddDbContext<Employee_BookDBContext>(options =>
-    options.UseNpgsql(connectionString));
-//options.UseNpgsql(builder.Configuration.GetConnectionString("AWSPostgreSQLEmployeeDBConnection")));
+//options.UseNpgsql(connectionString));
+options.UseNpgsql(builder.Configuration.GetConnectionString("AWSPostgreSQLEmployeeDBConnection")));
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

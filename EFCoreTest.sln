@@ -7,6 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreTest", "EFCoreTest\EF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "TestProject\TestProject.csproj", "{B5286FA3-F379-40DF-B6E4-59BE1C4ECD7C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".platform", ".platform", "{5D55D6AF-6AF1-4B23-B328-C6F0B0AF845E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{F2B97464-74D4-44D8-BA89-0F5274D24F75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "conf.d", "conf.d", "{9DA5D2EF-BF5A-4884-9957-CC48F4FB67D0}"
+	ProjectSection(SolutionItems) = preProject
+		00_custom_proxy.conf = 00_custom_proxy.conf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +33,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2B97464-74D4-44D8-BA89-0F5274D24F75} = {5D55D6AF-6AF1-4B23-B328-C6F0B0AF845E}
+		{9DA5D2EF-BF5A-4884-9957-CC48F4FB67D0} = {F2B97464-74D4-44D8-BA89-0F5274D24F75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02DDD0A2-940A-4FE9-9765-359E7CBA65CB}
