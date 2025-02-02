@@ -1,0 +1,45 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+#other apps
+/react_cognito_amplify_client
+/react-cognito
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ASP.NET Core
+
+# Ignore build folders
+bin/
+obj/
+# Ignore the output of Visual Studio code completion settings
+.vscode/
+.idea/
+
+# Ignore local settings
+#appsettings.json
+#appsettings.Development.json
+
+# Ignore user-specific files (IDE)
+*.user
+*.vs
+
+#TestProject
+TestProject/
